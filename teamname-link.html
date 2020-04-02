@@ -1,0 +1,174 @@
+<!--Status: OK-->
+<HTML>
+<HEAD>
+<TITLE>Welcome to collegehockeystats.net</TITLE>
+<style>
+.small { font-size: smaller }
+ pre { font-size: 12px; line-height: 15px; margin-top: 2px; margin-bottom: 2px; }
+.tiny { font-size: 11px; line-height: 13px; margin-top: 2px; margin-bottom: 2px; }
+.rostable { font-family: "Verdana", "Arial", "Helvetica"; font-size: xx-small; background-color:#FFF }
+.contents { margin-right: 3px; margin-left: 3px; }
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: none;
+  }
+}
+.chswhite10 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color:#333
+}
+
+.chssmallreg {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+.chssmallbold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.chsblackheaders {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+table.chssmallreg {border: 1px solid #000000; background-color:#FFF}
+table.chssmallreg td {border: 1px solid #666666;}
+
+.chsschedreg {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+table.chsschedreg {border: 0px solid #000000; }
+table.chsschedreg td {border: 0px solid #666666;}
+
+.reg13 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+}
+
+</style>
+</HEAD>
+
+<BODY leftmargin=0 topmargin=0 marginwidth=0 marginheight=0 bgcolor="#EEEEEE">
+
+<FORM NAME="chs">
+<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=2 BORDER=0>
+<TR>
+<TD BGCOLOR=000099>
+<IMG ALIGN=RIGHT SRC="/images/2202.gif" HEIGHT=22 WIDTH=286>
+<IMG ALIGN=LEFT SRC="/images/favicon.gif" HEIGHT=22 WIDTH=16>
+<FONT SIZE=-1>
+<SELECT NAME="LEAGUE" CLASS="small" OnChange="top.location=this.options[this.selectedIndex].value;">
+ <OPTION VALUE="/1920/teamstats/all">All Leagues/Divisions
+ <OPTION VALUE="/1920/teamstats/d1m">Division I Men
+ <OPTION VALUE="/1920/teamstats/ncw">National Collegiate Women
+ <OPTION VALUE="/1920/teamstats/d23m">Division II/III Men
+ <OPTION VALUE="/1920/teamstats/d3w">Division III Women
+ <OPTION VALUE="/1920/teamstats/all">---------------------
+ <OPTION VALUE="/1920/teamstats/atlantic">Atlantic Hockey
+ <OPTION VALUE="/1920/teamstats/bigten">Big Ten
+ <OPTION VALUE="/1920/teamstats/ecachm" SELECTED>ECAC Hockey Men
+ <OPTION VALUE="/1920/teamstats/heastm">Hockey East Men
+ <OPTION VALUE="/1920/teamstats/ivym">Ivy League Men
+ <OPTION VALUE="/1920/teamstats/nchc">National Collegiate Hockey Conference
+ <OPTION VALUE="/1920/teamstats/wcham">WCHA Men
+ <OPTION VALUE="/1920/teamstats/indm1">Men's Division I Independent
+ <OPTION VALUE="/1920/teamstats/chaw">College Hockey America
+ <OPTION VALUE="/1920/teamstats/ecachw">ECAC Hockey Women
+ <OPTION VALUE="/1920/teamstats/heastw">Hockey East Women
+ <OPTION VALUE="/1920/teamstats/ivyw">Ivy League Women
+ <OPTION VALUE="/1920/teamstats/newha">NEWHA
+ <OPTION VALUE="/1920/teamstats/wchaw">WCHA Women
+ <OPTION VALUE="/1920/teamstats/ccc">Commonwealth Coast Conference
+ <OPTION VALUE="/1920/teamstats/macm">MAC Men
+ <OPTION VALUE="/1920/teamstats/mascac">MASCAC
+ <OPTION VALUE="/1920/teamstats/miacm">MIAC Men
+ <OPTION VALUE="/1920/teamstats/ncham">NCHA Men
+ <OPTION VALUE="/1920/teamstats/nehcm">NEHC Men
+ <OPTION VALUE="/1920/teamstats/nescacm">NESCAC Men
+ <OPTION VALUE="/1920/teamstats/sunyac">SUNYAC
+ <OPTION VALUE="/1920/teamstats/uchcm">UCHC Men
+ <OPTION VALUE="/1920/teamstats/wiacm">WIAC Men
+ <OPTION VALUE="/1920/teamstats/ne10">Northeast-10
+ <OPTION VALUE="/1920/teamstats/indm3">Men's Division III Independents
+ <OPTION VALUE="/1920/teamstats/colonial">Colonial Hockey Conference
+ <OPTION VALUE="/1920/teamstats/macw">MAC Women
+ <OPTION VALUE="/1920/teamstats/miacw">MIAC Women
+ <OPTION VALUE="/1920/teamstats/nchaw">NCHA Women
+ <OPTION VALUE="/1920/teamstats/nehcw">NEHC Women
+ <OPTION VALUE="/1920/teamstats/nescacw">NESCAC Women
+ <OPTION VALUE="/1920/teamstats/newhl">NEWHL
+ <OPTION VALUE="/1920/teamstats/uchcw">UCHC Women
+ <OPTION VALUE="/1920/teamstats/wiacw">WIAC Women
+ <OPTION VALUE="/1920/teamstats/indw3">Women's Division III Independent
+</SELECT>&nbsp;<SELECT NAME="REPORT" CLASS="small" OnChange="top.location=this.options[this.selectedIndex].value;">
+ <OPTION VALUE="/1920/recent/ecachm">Recent Scores
+ <OPTION VALUE="/1920/upcoming/ecachm">Upcoming Games
+ <OPTION VALUE="/1920/schedules/ecachm">Schedules & Results
+ <OPTION VALUE="/1920/standings/ecachm">Standings
+ <OPTION VALUE="/1920/overallstats/ecachm">Overall Statistics
+ <OPTION VALUE="/1920/confstats/ecachm">Conference Statistics
+ <OPTION VALUE="/1920/playoffs/ecachm">Playoff Statistics
+ <OPTION VALUE="/1920/rosters/ecachm">Rosters
+ <OPTION VALUE="/1920/teamstats/ecachm" SELECTED>Team Statistics
+ <OPTION VALUE="/1920/textstats/ecachm">Team Statistics (Text)
+ <OPTION VALUE="/1920/national/d1m">National Statistics
+ <OPTION VALUE="/1920/ncaastats/d1m">NCAA Tournament Statistics
+</SELECT>
+</FONT>
+</TD></TR></TABLE>
+</FORM><div class="contents">
+<HR SIZE=3 NOSHADE WIDTH="100%">
+<CENTER><B><I>
+<FONT FACE="Arial, Helvetica" SIZE=+2><FONT COLOR=0000FF>ECAC Hockey Men</FONT> - <FONT COLOR=FF0000>Team Statistics</FONT></FONT>
+</I></B></CENTER>
+<HR SIZE=3 NOSHADE WIDTH="100%">
+<BR>
+<TABLE ALIGN=RIGHT BGCOLOR=FFFFFF BORDER=1 CELLPADDING=6 CELLSPACING=1 BORDERCOLOR=000000 WIDTH="40%">
+<tr>
+  <th BGCOLOR=000099><FONT FACE="Verdana,Arial,Helvetica" SIZE=-1 COLOR=FEFEFE>ECAC Hockey Men</FONT></th>
+</tr>
+<tr>
+<td valign=top><FONT FACE="Verdana,Arial,Helvetica" SIZE=-1>
+<A HREF="/1920/teamstats/brnm">Brown</A><BR>
+<A HREF="/1920/teamstats/clkm">Clarkson</A><BR>
+<A HREF="/1920/teamstats/clgm">Colgate</A><BR>
+<A HREF="/1920/teamstats/corm">Cornell</A><BR>
+<A HREF="/1920/teamstats/darm">Dartmouth</A><BR>
+<A HREF="/1920/teamstats/harm">Harvard</A><BR>
+<A HREF="/1920/teamstats/prnm">Princeton</A><BR>
+<A HREF="/1920/teamstats/quim">Quinnipiac</A><BR>
+<A HREF="/1920/teamstats/renm">Rensselaer</A><BR>
+<A HREF="/1920/teamstats/stlm">St. Lawrence</A><BR>
+<A HREF="/1920/teamstats/unim">Union</A><BR>
+<A HREF="/1920/teamstats/yalm">Yale</A><BR>
+</FONT></td>
+</tr>
+</TABLE>
+<FONT FACE="Verdana,Arial, Helvetica">
+Select from the list at the right to view the team statistics for any of the ECAC Hockey Men teams.
+</FONT>
+<BR CLEAR=ALL>
+<HR SIZE=3 NOSHADE WIDTH="100%">
+<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=2 BORDER=0>
+<TR VALIGN=CENTER><TD ALIGN=LEFT>
+<FONT FACE="Verdana,Arial,Helvetica" SIZE=-2><B>
+Wednesday,&nbsp;April&nbsp;1,&nbsp;2020&nbsp;&nbsp;10:10:45&nbsp;PM&nbsp;&nbsp;EST&nbsp;<BR>
+273858305 Pages Accessed Since April 6, 2013<br>
+E-mail: <A HREF="mailto:info@collegehockeystats.net">info@collegehockeystats.net</A></B></FONT></TD><TD ALIGN=RIGHT><FONT FACE="Verdana,Arial,Helvetica" SIZE=-2><B>
+Archives: <A HREF="/9900/teamstats">1999-00</A> | <A HREF="/0001/teamstats">2000-01</A> | <A HREF="/0102/teamstats">2001-02</A> | <A HREF="/0203/teamstats">2002-03</A> | <A HREF="/0304/teamstats">2003-04</A> | <A HREF="/0405/teamstats">2004-05</A><br>
+<A HREF="/0506/teamstats">2005-06</A> | <A HREF="/0607/teamstats">2006-07</A> | <A HREF="/0708/teamstats">2007-08</A> | <A HREF="/0809/teamstats">2008-09</A> | <A HREF="/0910/teamstats">2009-10</A> | <A HREF="/1011/teamstats">2010-11</A> | <A HREF="/1112/teamstats">2011-12</A><BR>
+ <A HREF="/1213/teamstats">2012-13</A> | <A HREF="/1314/teamstats">2013-14</A> | <A HREF="/1415/teamstats">2014-15</A> | <A HREF="/1516/teamstats">2015-16</A> | <A HREF="/1617/teamstats">2016-17</A> | <A HREF="/1718/teamstats">2017-18</A> | <A HREF="/1819/teamstats">2018-19</A><BR>
+</B></FONT></TD></TR></TABLE>
+<p></div></body></html>
